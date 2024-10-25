@@ -235,7 +235,7 @@ li ul.sub-menu li:last-child {
   background-image: url("img/home_img/why.jpg");
   background-size: cover;
   background-position: 43%;
-  opacity: .8;
+  opacity: 2.8;
   position:relative;   
   /* z-index:-2;  */
 }
@@ -354,15 +354,16 @@ li ul.sub-menu li:last-child {
   background-color: #f6f7f9;
 
   width: 420px;
-  height: 800px;
+  height: 788px;
   margin-left: 72%;
-  margin-top: -52.65%;
+  margin-top: -46.70%;
   
 }
 .pp{
   margin-top: 10%;
-  height: 800px;
-  width: 1100px;
+  margin-left: 3%;
+  height: 787px;
+  width: 1104px;
   background-image: url("img/home_img/plas3.png");
   border-style: hidden;}
 ol, ol > li {
@@ -799,7 +800,7 @@ ol.right > li::after{
 .box1{
     width: 322px;
     height: 170px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 
     margin: 0 auto;
     margin-top: 4%;
@@ -811,7 +812,7 @@ ol.right > li::after{
 .box1:hover{
   /* border-width: 4px; */
   /* border-color: #7f0086; */
-  border-bottom: #2b99b5;
+  border-bottom: #000000;
   border-bottom-style: outset;
   border-bottom-width: 4px;
   
@@ -823,7 +824,7 @@ ol.right > li::after{
 }
 
 .heading{
-    color: rgb(193, 204, 214, 0.955);
+    color: rgba(255, 255, 255, 0.955);
     font-size: 0.9rem;
     text-align:left;
     line-height: 1.1em;
@@ -833,7 +834,7 @@ ol.right > li::after{
   
 }
 .headingm{
-  color: rgb(193, 204, 214, 0.955);
+  color: rgba(255, 255, 255, 0.955);
   font-size: 0.9rem;
   text-align:left;
   line-height: 1.1em;
@@ -1014,12 +1015,12 @@ ol.right > li::after{
 }
 
 .intro{
-    background-color: #e1f2f7;
+    background-color: #65defd;
 
     border-style: ridge;
     border-bottom-style: outset;
-    border-bottom-color: coral;
-    border-bottom-width: 7px;
+    border-bottom-color: rgb(12, 11, 10);
+    border-bottom-width: 14px;
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
@@ -1089,7 +1090,9 @@ ol.right > li::after{
   .intro1 p {
     display: flex;
     flex-direction: column;
-    color: #555;
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
     line-height: 30px;
     letter-spacing: 1.2px;
     margin-bottom: 10px;
@@ -1131,7 +1134,7 @@ ol.right > li::after{
 
 }
 .c-h-w-n{
-  color: rgb(2, 111, 130);
+  color: rgb(47, 155, 174);
   margin-left:18%;
   margin-top: -39px;
 
@@ -1479,7 +1482,7 @@ ol.right > li::after{
 }
 .copyright-area {
   background: #000000;
-  padding: 25px 0;
+  padding: 4px 0;
 }
 .copyright-text p {
   margin: 0;
@@ -1658,8 +1661,8 @@ ol.right > li::after{
 .graph h1{
   text-align: center;
   font-size: 50px;
-  color: #004e5f;
-  margin-bottom: 40px;
+  color: #000000;
+  margin-bottom: 60px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .g1{
@@ -1671,6 +1674,7 @@ ol.right > li::after{
 .g2{
   margin-left: 15%;
   width:70%;
+  margin-top: 3%;
   /* justify-content: center; */
   height: 750px;
  

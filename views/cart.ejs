@@ -16,7 +16,7 @@
 <body>
     <nav class="nav">
         <div class="container">
-            <h1 class="logo"><a href="/"><img class="logo" src="img/home_img/logo.png" alt=""></a>
+            <h1 class="logo"><a href="/"><img class="logo" src="img/home_img/group.png" alt=""></a>
             </h1>
             <ul>
                 <li><a href="/" class="current">Home</a></li>
@@ -73,7 +73,7 @@
                     </td>
                     <td class="text-right" title="Qtn">
                         <form action="/cart1" method="post">
-                            <input type="text" name="quantity" placeholder="1">
+                            <input type="text" name="quantity" value="<%= camps.qty %>" placeholder="1">
                         </form>
 
 
@@ -82,22 +82,35 @@
                         <%=camps.qotation %>
                     </td>
                     <td class="text-right" title="Total">
-                        Totot-000
+                        <%= camps.qty * camps.qotation %>
                     </td>
                     <td class="text-right">
-                        <button class="" onclick="deleteItem(this)"> Remove</button>
-
+                        <form action="/cart/remove" method="POST">
+                            <input type="hidden" name="itemId" value="<%= camps.id %>">
+                            <button type="submit">Remove</button>
+                        </form>
                     </td>
+                    
                 </tr>
                 <% } %>
-
-                    <tr class="total-row info">
-                        <td class="text-right" colspan="4">Total</td>
-                        <td class="text-right">18.00</td>
-                        <td class="text-right" title="Total">
-                            <button><a href="pay"> BUY</a></button>
-                        </td>
-                    </tr>
+<!-- 
+                <% 
+                // Initialize total variable
+                let total = 0;
+            
+                // Calculate total using a for loop
+                for (let i = 0; i < ca.length; i++) {
+                    total += ca[i].quantity * ca[i].price;
+                }
+            %> -->
+                
+                <tr class="total-row info">
+                    <td class="text-right" colspan="4">Total</td>
+                    <td class="text-right"><%= total %></td>
+                    <td class="text-right" title="Total">
+                        <button><a href="pay"> BUY</a></button>
+                    </td>
+                </tr>
         </table>
     </div>
 

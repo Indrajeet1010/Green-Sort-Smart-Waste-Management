@@ -144,6 +144,7 @@ body {
   table img {
 
     max-width: 100%;
+    background-image:  url(img/home_img/b11.jpg);
     height: 150px;
     border-radius: 10px;
     border-color: #000;

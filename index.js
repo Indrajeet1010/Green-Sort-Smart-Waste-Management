@@ -301,12 +301,20 @@ app.get('/cart1', async (req, res) => {
     const ca = await Buy.find({});
     // console.log(ca._id)
         
-    
         res.render('cart', { ca })
-   
-
-    
 });
+
+app.get('/success', async (req, res) => {
+    console.log("coming here")
+    res.render('success');
+});
+
+app.post('/cart1/remove', (req, res) => {
+    const itemId = req.body.itemId;
+    cart = cart.filter(item => item.id !== itemId); 
+    res.redirect('/cart');
+});
+
 
 
 
