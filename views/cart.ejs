@@ -85,28 +85,30 @@
                         <%= camps.qty * camps.qotation %>
                     </td>
                     <td class="text-right">
-                        <form action="/cart/remove" method="POST">
-                            <input type="hidden" name="itemId" value="<%= camps.id %>">
+                        <form action="/cart1/remove" method="POST">
+                            <!-- <input type="hidden" name="itemId" value="<%= camps.id %>"> -->
+                            <!-- <input type="hidden" name="itemId" value="<%= camps.id %>-<%= ca %>"> -->
+                            <input type="hidden" name="itemData" value="<%= camps.id %>-<%= ca.join(",") %>">
                             <button type="submit">Remove</button>
                         </form>
                     </td>
                     
                 </tr>
                 <% } %>
-<!-- 
+
                 <% 
                 // Initialize total variable
-                let total = 0;
+                let total1 = 0;
             
                 // Calculate total using a for loop
                 for (let i = 0; i < ca.length; i++) {
-                    total += ca[i].quantity * ca[i].price;
+                    total1 += ca[i].qty * ca[i].qotation;
                 }
-            %> -->
+            %>
                 
                 <tr class="total-row info">
                     <td class="text-right" colspan="4">Total</td>
-                    <td class="text-right"><%= total %></td>
+                    <td class="text-right"><%= total1 %></td>
                     <td class="text-right" title="Total">
                         <button><a href="pay"> BUY</a></button>
                     </td>

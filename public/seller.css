@@ -1,9 +1,11 @@
 body{
   margin:0;
-  padding: 0;    
-  background-color: rgba(255, 255, 255, 0.189);
- font-family: Georgia, 'Times New Roman', Times, serif;
- color: rgb(0, 23, 28);
+  padding: 0;
+  /* background-image: url(''); */
+  background-color: rgba(230, 230, 230, 0.189);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(0, 23, 28);
+ /* color: #333; */
  
 }
 .container1 {
@@ -23,12 +25,12 @@ body{
 
 
 .Sellog {
-background-color: #f4f4f4;
-padding: 20px;
+background-color: #000000;
+padding: 27px;
 border-radius: 8px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-width: 80%; /* Set a percentage or adjust as needed */
-max-width: 400px; /* Set a maximum width if needed */
+width: 87%; /* Set a percentage or adjust as needed */
+max-width: 408px; /* Set a maximum width if needed */
 margin: 0 auto; /* Center the container horizontally */
 }
 
@@ -49,14 +51,14 @@ margin: 0 auto; /* Center the container horizontally */
 }
 
 .Sellog input[type="submit"] {
-  background-color: #0b0c0b;
+  background-color: #c19f9f;
   color: rgb(214, 209, 209);
   cursor: pointer;
-  width: 100%; /* Make the button full width */
+  width: 95%; /* Make the button full width */
 }
 
 .Sellog input[type="submit"]:hover {
-  background-color: #080a09;
+  background-color: #e60f0f;
 }
 
 .container1 img{
@@ -180,9 +182,9 @@ header{
   text-align: center;
 }
 header h1{
-  font-size: 35px;
+  font-size: 69px;
   font-weight: bold;
-  margin-top: 70px;
+  margin-top: 75px;
 }
 header p{
   font-size: 20px;
@@ -194,8 +196,8 @@ header p{
   margin-right:auto ;
   height: auto;
   width:700px;
-  background: rgba(0, 32, 40, 0.705);     
-  padding:20px; 
+  background: rgba(40, 40, 40, 0.71);     
+  padding:120px; 
   
 }
 *{

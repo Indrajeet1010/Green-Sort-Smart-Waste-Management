@@ -167,7 +167,7 @@ app.post("/seller_details",async(req,res)=>{
         qty:req.body.qty,
         qotation:req.body.qotation,
         query:req.body.query,
-        image:req.body.image
+        image: "/img/home_img/plas/" + req.body.image
     }
     await Sell.insertMany([data1])
     
@@ -310,9 +310,12 @@ app.get('/success', async (req, res) => {
 });
 
 app.post('/cart1/remove', (req, res) => {
-    const itemId = req.body.itemId;
-    cart = cart.filter(item => item.id !== itemId); 
-    res.redirect('/cart');
+    // const itemId = req.body.itemId;
+    const [itemId, caString] = req.body.itemData.split("-");
+    const caArray = caString.split(","); // This will give you the original array
+    ca = caArray.filter(item => item.id !== itemId);
+    // res.redirect('/cart');
+    res.render('cart', { ca })
 });
 
 
